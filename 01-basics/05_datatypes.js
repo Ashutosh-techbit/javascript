@@ -2,9 +2,9 @@
 
 // 7 types = string , number , boolean , null , undefined , symbol , Bigint
 
-const str = "123"
+const string = "123"
 const num  = 123
-const boo = false
+const boolean = false
 let name1; // undefined
 const temp = null;
 
