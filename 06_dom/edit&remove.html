@@ -5,7 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+
+
+<body style="background-color: black;">
+    <!-- <h1 style="color: aliceblue;">hello world</h1> -->
+    <ul class="language" style="color: aliceblue;">
+        <li>javascript</li>
+    </ul>
 </body>
+
+
+<script>
+
+    function addlang(langname){
+       const li= document.createElement('li')
+        li.innerHTML=`${langname}`
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addlang("java")
+    addlang("python")
+
+    // ====optimised way to craete adddlang()====
+
+    // use appendchild instead of innerhtml so that u dont need to traverse all other elements durinh insertion at last
+
+    function addoptimallanguage(langname){
+        const li=document.createElement('li');
+     li.appendChild(document.createTextNode(langname))
+     document.querySelector('.language').appendChild(li)
+    }
+addoptimallanguage("rust")
+addoptimallanguage("go")
+ 
+// =================Edit===============
+  const secondlang= document.querySelector("li:nth-child(2)")
+  console.log(secondlang)
+//   secondlang.innerHTML="mojo"
+
+// ===========edit=========
+const newli=document.createElement('li')
+newli.textContent="bhailang"
+secondlang.replaceWith(newli)
+
+
+// edit
+const firstlang = document.querySelector("li: first-child")
+firstlang.outerHTML = '<li>tyepscript</li>'
+
+// remove
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+
+
+
+
+
+
+
+</script>
 </html>

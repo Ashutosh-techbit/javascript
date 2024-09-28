@@ -1,0 +1,29 @@
+body{
+    background-color: #656565;
+}
+
+
+.button{
+    display: inline-block;
+    overflow: hidden; 
+    border: 2px solid black;
+    border-radius: 40px ;
+}
+
+#grey{
+    background-color: #828282;
+    padding: 50px 50px;
+    margin: 5px;
+}
+#white{
+    background-color: #ffffff;
+    padding: 50px 50px;
+}
+#blue{
+    background-color: #1c19d5;
+    padding: 50px 50px;
+}
+#yellow{
+    background-color: #d0ff00;
+    padding: 50px 50px;
+}
