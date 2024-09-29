@@ -1,0 +1,36 @@
+h1{
+    color: rgb(209, 188, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 15px;
+    border-radius: 5px;
+    /* margin: 10px 10px 10px 250px ; */
+}
+label{
+    color: rgb(140, 198, 250);
+    /* margin: 10px; */
+    margin: 0px 0px 0px 45px ;
+}
+
+input{
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+button{
+     border: 1.5px solid #31fff5;
+     border-radius: 5px;
+     background-color: #000000;
+     color: aliceblue;
+     margin: 0px 0px 0px 45px ;
+       
+}
+
+#result,#result-guide{
+    color: #ffffff;
+}
+

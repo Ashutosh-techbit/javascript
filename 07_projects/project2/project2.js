@@ -1,45 +1,4 @@
-# JS Projects 
-
-## [Project link] ()
-
-## Project 1
-```javascript
-
-const buttons = document.querySelectorAll(".button")
-// console.log(buttons)---nodelist
-const body = document.querySelector("body") 
-
-
-buttons.forEach( function(button){
-    console.log(button);
-    button.addEventListener('click',function(e){
-        console.log(e)
-
-        // return Element at which event occur
-        console.log(e.target)
-
-        if(e.target.id==="grey"){
-            body.style.backgroundColor=e.target.id;
-        }
-        if(e.target.id==="white"){
-            body.style.backgroundColor=e.target.id;
-        }
-        if(e.target.id==="blue"){
-            body.style.backgroundColor=e.target.id;
-        }
-        if(e.target.id==="yellow"){
-            body.style.backgroundColor=e.target.id;
-        }  
-    })
-}); 
-```
-
-
-## project 2
-
-```javascript
-
- const form = document.querySelector('form');
+const form = document.querySelector('form');
 
 form.addEventListener('submit',function(e){
     
@@ -70,8 +29,11 @@ form.addEventListener('submit',function(e){
        }
        else{
         result.innerHTML= `<span>Over weigth : ${bmi}</span>`
-       }  
-    }
-})
-```
+       }
 
+       
+       
+    }
+   
+
+})
