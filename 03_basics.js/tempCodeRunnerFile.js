@@ -1,8 +1,10 @@
+const user ={
+//     name : "ashutosh",
+//     price : 44,
 
-//     let username = "hitesh"
-//     console.log(username) //cannot use this.username in function only used in objects . here it prints undefined
-//     return 0
+//     message : function(){
+//         console.log( `${this.name},goodmorning`) 
+//     }
+    
 // }
-
-// chai()
-// console.log(chai())
+// console.log(user)
