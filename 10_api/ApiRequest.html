@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiRequest</title>
+</head>
+
+<style>
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+</style>
+
+
+
+<body style="background-color: rgb(154, 154, 154);">
+
+
+    <h1>API(Application program interface)</h1>
+    <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="height: 10%; width: 10%;">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/Ashutosh-techbit';
+    const xhr =  new XMLHttpRequest();
+    xhr.open('GET',requestUrl)
+
+    
+    //to track continuously
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4){
+
+            // const data = this.response; // bydefault return data in string typeof
+
+            // console.log(typeof data) //undefined
+            // console.log(data.name) //return undefined 
+ 
+            //--------------to get data convert string into object type by using JASON.parse---------
+
+            const data = JSON.parse(this.response) // return data in object typeof
+            // console.log(data)
+            console.log(typeof data) //object
+            console.log(data.avatar_url) 
+
+            document.querySelector('img').setAttribute('src',`${data.avatar_url}`)
+        }
+    }
+    xhr.send()
+    
+
+    
+</script>
+</html>
