@@ -1,3 +1,1 @@
-ch(error){
-    //     console.log('error')
-    // }
+await
