@@ -24,7 +24,7 @@
 // user.message()
 
 
-// console.log(this) 
+// console.log(this)  // global context 
   
 let username ="ashutosh"
 function chai(){
