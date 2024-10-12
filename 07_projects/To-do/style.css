@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(17, 28, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    color: rgb(255, 255, 255);
+}
+
+.container{
+}
+
+.date{
+    
+    color: #0eff00;
+    border: 2px solid #04b2ff;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+.todo{
+    background-color: #202542;
+    border-radius: 40px;
+    padding: 10px;
+    width: 50%;
+    height: 70%;
+    border: 3px solid #283c75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo h1{
+    display: flexbox;
+}
+.date{
+    float: left;
+}
+
+button{
+    color: black;
+}

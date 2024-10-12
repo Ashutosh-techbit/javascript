@@ -17,7 +17,7 @@ const changecolor = function(){
 
 document.querySelector('#start').addEventListener('click',function(){
     if(intervalid==null){
-        intervalid = setInterval(changecolor,2000)
+        intervalid = setInterval(changecolor,1500)
     }
 })
 
